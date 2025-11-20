@@ -12,7 +12,7 @@ open class ProductImage(
 
     var productImageUrl: String = "",
 
-    var sortOrder: Long? = null,
+    var sortOrder: Long = 1,
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", nullable = false)
